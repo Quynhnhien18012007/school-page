@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ktra 15 phút</title>
+        <style>
+            @font-face {
+                font-family: abc;
+                src: url("/Home/DancingScript-VariableFont_wght.ttf");
+            }
+            .header-row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                background-color: hsl(231, 53%, 60%);
+                margin-bottom: 30px;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                flex: 0 0 auto;
+                height: 80px;
+            }
+            .logo {
+                width: 150px;
+                height: 80px;
+                margin-right: 10px;
+            }
+            .school-name {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            .nav {
+                text-align: center;
+                flex: 1;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 80px;
+            }
+            nav a {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 300;
+                color: #fff;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-decoration: none;
+                text-align: center;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            nav a:hover {
+                background-color: #223994;
+                text-decoration: underline;
+            }
+            .Bg {
+                background-image: url('/Home/background_2.JPG');
+                background-size: cover;
+                background-position: top;
+                text-align: center;
+                padding: 50px 50px;
+            }
+            .Bg h1 {
+                font-family: abc;
+                font-size: 100px;
+                color: rgb(255, 255, 255);
+            }
+            footer {
+                background: linear-gradient(135deg, #333, #223994);
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                margin-top: 15px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 18px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            }
+            footer p {
+                margin: 0;
+                position: relative;
+                z-index: 1;
+            }
+            footer::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: rgba(255, 255, 255, 0.1);
+                transform: rotate(30deg);
+                animation: shine 4s infinite linear;
+                pointer-events: none;
+            }
+            @keyframes shine {
+                0% {
+                    transform: translateX(-100%) rotate(30deg);
+                }
+                100% {
+                    transform: translateX(100%) rotate(30deg);
+                }
+            }
+            .memory {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                gap: 20px;
+            }
+            .vid {
+                width: 50%;
+            }
+            .vid video {
+                width: 100%;
+                height: auto;
+            }
+            .hinhs {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+            }
+            .hinh1, .hinh2 {
+                width: 100%;
+                height: 179px;
+                overflow: hidden;
+            }
+            .hinh1 img, .hinh2 img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hinh1 {
+                background-color: #333;
+                margin-bottom: 5px;
+            }
+            .hinh2 {
+                background-color: aqua;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-row">
+            <div class="container">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                    <img src="./logo.png" alt="Logo" class="logo">
+                    <div class="school-name">Trường THPT Phú Nhuận</div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="" target="_blank">Trang chủ</a>
+                <a href="" target="_blank">Hoạt động lớp</a>
+                <a href="" target="_blank">Thành viên nhóm</a>
+            </nav>
+        </div>
+        
+        <section class="Bg">
+            <h1>A3 yêu thương</h1>
+        </section>
+
+        <div class="memory">
+            <div class="vid">
+                <video controls>
+                    <source src="./video_lop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hinhs">
+                <div class="hinh1">
+                    <img src="./hinh1.jpg" alt="Image 1">
+                </div>
+                <div class="hinh2">
+                    <img src="./hinh2.jpg" alt="Image 2">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Nhóm 3</p>
+        </footer>
+    </body>
+</html>
