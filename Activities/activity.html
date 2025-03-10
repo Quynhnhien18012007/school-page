@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>Hoạt động lớp</title>
     <style>
-        .header-row {
+       .header-row {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -16,12 +16,13 @@
             gap: 5px;
             background-color: hsl(231, 53%, 60%);
             margin-bottom: 30px;
+            padding: 0 10px;
         }
         .container {
             display: flex;
             align-items: center;
-            flex: 0 0 auto;
             height: 80px;
+            min-width: 0;
         }
         .logo {
             width: 100px;
@@ -29,36 +30,85 @@
             margin-right: 10px;
         }
         .school-name {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: clamp(16px, 4vw, 20px);
             font-weight: bold;
-            display: flex;
-            align-items: center;
+            white-space: nowrap;
+        }
+        .menu-toggle {
+            display: none;
+        }
+        .menu-label {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
         }
         .nav {
-            text-align: center;
             flex: 1;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-end;
             align-items: center;
             height: 80px;
         }
         nav a {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Times, 'Times New Roman', serif;
             font-weight: 300;
             color: #fff;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 0 15px;
             text-decoration: none;
             text-align: center;
             height: 100%;
             display: flex;
             align-items: center;
+            font-size: clamp(14px, 2.5vw, 16px);
+            white-space: nowrap;
         }
         nav a:hover {
             background-color: #223994;
             text-decoration: underline;
         }
+    @media screen and (max-width: 768px) {
+        .header-row {
+            flex-wrap: wrap;
+            padding: 10px;
+            }
+        .menu-label {
+            display: block;
+        }
+        .nav {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+            background-color: hsl(231, 53%, 60%);
+        }
+        .menu-toggle:checked ~ .nav {
+            display: flex;
+        }
+        nav a {
+            width: 100%;
+            padding: 15px;
+            justify-content: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container {
+            flex: 1;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .logo {
+            width: 80px;
+            height: 60px;
+        }
+        .container {
+            height: 60px;
+        }
+        .school-name {
+            font-size: clamp(14px, 3vw, 16px);
+        }
+    }    
         body {
             background: #f5f7fa;
             margin: 0;
