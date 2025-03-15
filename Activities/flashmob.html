@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -154,85 +154,83 @@
                 0% { transform: translateX(-100%) rotate(30deg); }
                 100% { transform: translateX(100%) rotate(30deg); }
             }
-            .memory {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-                gap: 20px;
-            }
-            .vid {
-                width: 65%;
-            }
-            .vid video {
-                width: 100%;
-                height: auto;
-            }
-            .hinhs {
-                width: 45%;
-                display: flex;
-                flex-direction: column;
-            }
-            .hinh1, .hinh2 {
-                width: 100%;
-                height: 179px;
-                overflow: hidden;
-            }
-            .hinh1 img, .hinh2 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .hinh1 {
-                background-color: #333;
-                margin-bottom: 5px;
-            }
-            .hinh2 {
-                background-color: aqua;
-                margin-top: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header-row">
-            <div class="container">
-                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                    <img src="./Home/logo.png" alt="Logo" class="logo">
-                    <div class="school-name">Trường THPT Phú Nhuận</div>
-                </a>
-            </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-label">☰</label>
-            <nav class="nav">
-                <a href="" target="_self">Trang chủ</a>
-                <a href="Activities/activity.html" target="_self">Hoạt động lớp</a>
-                <a href="member/member.html" target="_self">Thành viên nhóm</a>
-            </nav>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #444;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 10px auto;
+            text-align: justify;
+        }
+        ul {
+            color: #666;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 10px auto;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-row">
+        <div class="container">
+            <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="../Home/logo.png" alt="Logo" class="logo">
+                <div class="school-name">Trường THPT Phú Nhuận</div>
+            </a>
         </div>
-        
-        <section class="Bg">
-            <h1>A3 yêu thương</h1>
-        </section>
+        <nav class="nav">
+            <a href="../index.html" target="_self">Trang chủ</a>
+            <a href="activity.html" target="_self">Hoạt động lớp</a>
+            <a href="../member/member.html" target="_self">Thành viên nhóm</a>
+        </nav>
+    </div>
 
-        <div class="memory">
-            <div class="vid">
-                <video controls muted autoplay>
-                    <source src="./Home/video_lop.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="hinhs">
-                <div class="hinh1">
-                    <img src="./Home/hinh1.jpg" alt="Image 1">
-                </div>
-                <div class="hinh2">
-                    <img src="./Home/dân vũ.jpg" alt="Image 2">
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>Nhóm 3</p>
-        </footer>
-    </body>
+    <h1>Class Activity: Group Discussion</h1>
+    <p>
+        In this engaging class activity titled "Group Discussion," students will participate in a collaborative exercise designed to deepen their understanding of course material while honing essential skills. This activity is structured to promote active learning and meaningful interaction among peers.
+    </p>
+    
+    <h2>Objectives</h2>
+    <p>
+        The primary goals of this activity are to encourage critical thinking, enhance communication skills, and foster teamwork. By working together, students will develop the ability to articulate their thoughts clearly, listen to diverse perspectives, and constructively debate ideas.
+    </p>
+
+    <h2>Activity Details</h2>
+    <p>
+        Students will be divided into small groups of 4-6 members, with each group assigned a specific topic relevant to the course syllabus. The activity lasts approximately 45 minutes, broken down into discussion time (30 minutes) and a presentation preparation phase (15 minutes). Topics may range from analyzing case studies to debating ethical dilemmas or solving real-world problems tied to the subject matter.
+    </p>
+
+    <h2>Structure and Guidelines</h2>
+    <ul>
+        <li><strong>Preparation:</strong> Each group receives a topic and a set of guiding questions 5 minutes before the discussion begins.</li>
+        <li><strong>Discussion:</strong> Groups collaborate to explore the topic, share insights, and develop a cohesive argument or solution.</li>
+        <li><strong>Presentation:</strong> One or two group members present a 3-5 minute summary of their findings to the class.</li>
+        <li><strong>Participation:</strong> All members are encouraged to contribute, with a designated moderator ensuring balanced input.</li>
+    </ul>
+
+    <h2>Expected Outcomes</h2>
+    <p>
+        By the end of the activity, students will have improved their ability to work collaboratively, gained a deeper understanding of the assigned topic, and practiced delivering concise, impactful presentations. The instructor will provide feedback to each group, highlighting strengths and areas for improvement.
+    </p>
+</body>
 </html>
