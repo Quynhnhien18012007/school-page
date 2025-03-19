@@ -128,7 +128,9 @@
         .members-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: auto;
             gap: 20px;
+            padding: 0 20px;
             margin-bottom: 30px;
         }
         .member-card {
@@ -167,6 +169,10 @@
             color: #4a90e2;
             font-weight: bold;
         }
+        .member-card:nth-child(1) { grid-column: 1; grid-row: 1; }
+        .member-card:nth-child(2) { grid-column: 2; grid-row: 1; }
+        .member-card:nth-child(3) { grid-column: 1; grid-row: 2; }
+        .member-card:nth-child(4) { grid-column: 2; grid-row: 2; }
     </style>
 </head>
 <body>
@@ -193,6 +199,8 @@
                 <img src="Quynh_Nhien.jpg" alt="Quỳnh Nhiên">
                 <h2>Dương Ngọc Quỳnh Nhiên</h2>
                 <p>STT: 32</p>
+                <p><strong>Đặc điểm:</strong> Siêu Designer</p>
+                <p><strong>Sở thích:</strong> Đọc truyện tranh</p>
                 <div class="role">Trưởng nhóm</div>
             </div>
             
@@ -200,6 +208,8 @@
                 <img src="./Tam_An.jpg" alt="Tâm An">
                 <h2>Nguyễn Ngọc Tâm An</h2>
                 <p>STT: 01</p>
+                <p><strong>Đặc điểm:</strong> Siêu Võ sư</p>
+                <p><strong>Sở thích:</strong> Đánh bạn</p>
                 <div class="role">Thành viên</div>
             </div>
 
@@ -207,13 +217,17 @@
                 <img src="./Dang_Khanh.jpg" alt="Đăng Khánh">
                 <h2>Hoàng Đăng Khánh</h2>
                 <p>STT: 19</p>
+                <p><strong>Đặc điểm:</strong> Siêu Photographer</p>
+                <p><strong>Sở thích:</strong> Học Hóa</p>
                 <div class="role">Thành viên</div>
             </div>
             
             <div class="member-card">
-                <img src="./Thanh_Phong.jpg"  alt="Thành Phong">
+                <img src="Thanh Phong.jpg"  alt="Thành Phong">
                 <h2>Trần Nguyễn Thành Phong</h2>
-                <p>STT: 35</p>
+                <p>STT: 34</p>
+                <p><strong>Đặc điểm:</strong> Siêu nói nhiều</p>
+                <p><strong>Sở thích:</strong> Ngủ</p>
                 <div class="role">Thành viên</div>
             </div>
         </div>
