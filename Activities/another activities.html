@@ -13,10 +13,8 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                gap: 5px;
                 background-color: hsl(231, 53%, 60%);
-                margin-bottom: 30px;
-                padding: 0 10px;
+                margin-bottom: 10px;
             }
             .container {
                 display: flex;
@@ -25,32 +23,23 @@
                 min-width: 0;
             }
             .logo {
-                width: 100px;
+                width: 80px;
                 height: 80px;
+                margin-left: 10px;
                 margin-right: 10px;
             }
             .school-name {
                 font-family: 'Times New Roman', Times, serif;
-                font-size: clamp(16px, 4vw, 20px);
+                font-size: 30px;
                 font-weight: bold;
                 white-space: nowrap;
-            }
-            .menu-toggle {
-                display: none;
-            }
-            .menu-label {
-                display: none;
-                font-size: 24px;
-                color: #fff;
-                padding: 10px;
-                cursor: pointer;
             }
             .nav {
                 flex: 1;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                height: 80px;
+                height: 100px;
             }
             nav a {
                 font-family: Times, 'Times New Roman', serif;
@@ -62,52 +51,12 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
-                font-size: clamp(14px, 2.5vw, 16px);
+                font-size: large;
                 white-space: nowrap;
             }
             nav a:hover {
                 background-color: #223994;
                 text-decoration: underline;
-            }
-            @media screen and (max-width: 768px) {
-                .header-row {
-                    flex-wrap: wrap;
-                    padding: 10px;
-                }
-                .menu-label {
-                    display: block;
-                }
-                .nav {
-                    display: none;
-                    width: 100%;
-                    flex-direction: column;
-                    height: auto;
-                    background-color: hsl(231, 53%, 60%);
-                }
-                .menu-toggle:checked ~ .nav {
-                    display: flex;
-                }
-                nav a {
-                    width: 100%;
-                    padding: 15px;
-                    justify-content: center;
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                }
-                .container {
-                    flex: 1;
-                }
-            }
-            @media screen and (max-width: 480px) {
-                .logo {
-                    width: 80px;
-                    height: 60px;
-                }
-                .container {
-                    height: 60px;
-                }
-                .school-name {
-                    font-size: clamp(14px, 3vw, 16px);
-                }
             }
             .Bg {
                 background-image: url('./Home/background_2.JPG');
@@ -122,7 +71,7 @@
                 color: rgb(255, 255, 255);
             }
             footer {
-                background: linear-gradient(135deg, #333, #223994);
+                background: linear-gradient(135deg, #0f094b, #223994);
                 color: #fff;
                 text-align: center;
                 padding: 20px 0;
@@ -131,34 +80,15 @@
                 font-size: 18px;
                 position: relative;
                 overflow: hidden;
-                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
             }
             footer p {
                 margin: 0;
                 position: relative;
-                z-index: 1;
-            }
-            footer::before {
-                content: '';
-                position: absolute;
-                top: -50%;
-                left: -50%;
-                width: 200%;
-                height: 200%;
-                background: rgba(255, 255, 255, 0.1);
-                transform: rotate(30deg);
-                animation: shine 4s infinite linear;
-                pointer-events: none;
-            }
-            @keyframes shine {
-                0% { transform: translateX(-100%) rotate(30deg); }
-                100% { transform: translateX(100%) rotate(30deg); }
             }
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
         }
         h1 {
             color: #333;
@@ -166,34 +96,22 @@
             font-size: 36px;
             margin-bottom: 20px;
         }
-        h2 {
-            color: #444;
-            font-size: 24px;
-            margin-top: 30px;
-        }
         p {
             color: #666;
             font-size: 18px;
             line-height: 1.6;
             max-width: 700px;
             margin: 10px auto;
-            text-align: justify;
-        }
-        ul {
-            color: #666;
-            font-size: 18px;
-            max-width: 700px;
-            margin: 10px auto;
-        }
-        li {
-            margin-bottom: 10px;
+            text-align: center;
         }
         img {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
+            border-radius: 2%;
         }
     </style>
 </head>
+<body>
 <div class="header-row">
     <div class="container">
         <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
@@ -203,20 +121,26 @@
     </div>
     <nav class="nav">
         <a href="../index.html" target="_self">Trang chủ</a>
-        <a href="activity.html" target="_self">Hoạt động lớp</a>
-        <a href="../member/member.html" target="_self">Thành viên nhóm</a>
+        <a href="activity_2.html" target="_self">Hoạt động lớp</a>
+        <a href="../member/member_2.html" target="_self">Thành viên nhóm</a>
     </nav>
 </div>
 
 <h1>CÁC HOẠT ĐỘNG KHÁC</h1>
 <p>
-    Lớp 12A3 chúng em là một tập thể năng động và đoàn kết, không chỉ chú trọng vào việc học mà còn tham gia rất nhiều hoạt động ngoại khóa thú vị. Lớp tích cực tham gia các phong trào của trường như hội thao, hội thi văn nghệ,... Những hoạt động này không chỉ giúp chúng em rèn luyện kỹ năng mà còn tạo nên những kỷ niệm đẹp trước khi rời ghế nhà trường.
+    Lớp 12A3 chúng em là một tập thể năng động và đoàn kết, không chỉ chú trọng vào việc học mà còn tham gia rất nhiều hoạt động ngoại khóa thú vị.
+    Lớp tích cực tham gia các phong trào của trường như hội thao, hội thi văn nghệ,...
+    Những hoạt động này không chỉ giúp chúng em rèn luyện kỹ năng mà còn tạo nên những kỷ niệm đẹp trước khi rời ghế nhà trường.
 </p>
 <div class="flashmob" >
+    <div style="margin: auto; width: 70%;">
         <img src="../Home/8.jpg" alt="Đá banh" >
         <p> Tham gia thi đấu đá banh </p>
+    </div>
+    <div style="margin: auto; width: 70%;">
         <img src="../Home/9.jpg" alt="Văn nghệ 20/11" >
-        <p> Tham gia cuộc thi văn nghệ chào mừng 20/11 <style> font-size= 30px ; margin-right= 50px </style> </p>
+        <p> Tham gia cuộc thi văn nghệ chào mừng 20/11</p>
+    </div>
 </div>
 </body>
 </html>

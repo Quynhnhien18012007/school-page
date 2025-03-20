@@ -8,15 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>Hoạt động lớp</title>
     <style>
-       .header-row {
+        .header-row {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            gap: 5px;
             background-color: hsl(231, 53%, 60%);
-            margin-bottom: 30px;
-            padding: 0 10px;
+            margin-bottom: 10px;
         }
         .container {
             display: flex;
@@ -25,32 +23,23 @@
             min-width: 0;
         }
         .logo {
-            width: 100px;
+            width: 80px;
             height: 80px;
+            margin-left: 10px;
             margin-right: 10px;
         }
         .school-name {
             font-family: 'Times New Roman', Times, serif;
-            font-size: clamp(16px, 4vw, 20px);
+            font-size: 30px;
             font-weight: bold;
             white-space: nowrap;
-        }
-        .menu-toggle {
-            display: none;
-        }
-        .menu-label {
-            display: none;
-            font-size: 24px;
-            color: #fff;
-            padding: 10px;
-            cursor: pointer;
         }
         .nav {
             flex: 1;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            height: 80px;
+            height: 100px;
         }
         nav a {
             font-family: Times, 'Times New Roman', serif;
@@ -62,53 +51,40 @@
             height: 100%;
             display: flex;
             align-items: center;
-            font-size: clamp(14px, 2.5vw, 16px);
+            font-size: large;
             white-space: nowrap;
         }
         nav a:hover {
             background-color: #223994;
             text-decoration: underline;
         }
-    @media screen and (max-width: 768px) {
-        .header-row {
-            flex-wrap: wrap;
-            padding: 10px;
-            }
-        .menu-label {
-            display: block;
+        .Bg {
+            background-image: url('./Home/background_2.JPG');
+            background-size: cover;
+            background-position: top;
+            text-align: center;
+            padding: 50px 50px;
         }
-        .nav {
-            display: none;
-            width: 100%;
-            flex-direction: column;
-            height: auto;
-            background-color: hsl(231, 53%, 60%);
+        .Bg h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 100px;
+            color: rgb(255, 255, 255);
         }
-        .menu-toggle:checked ~ .nav {
-            display: flex;
+        footer {
+            background: linear-gradient(135deg, #0f094b, #223994);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 15px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            position: relative;
+            overflow: hidden;
         }
-        nav a {
-            width: 100%;
-            padding: 15px;
-            justify-content: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .container {
-            flex: 1;
-        }
-    }
-    @media screen and (max-width: 480px) {
-        .logo {
-            width: 80px;
-            height: 60px;
-        }
-        .container {
-            height: 60px;
-        }
-        .school-name {
-            font-size: clamp(14px, 3vw, 16px);
-        }
-    }    
+        footer p {
+            margin: 0;
+            position: relative;
+        }    
         body {
             background: #f5f7fa;
             margin: 0;
@@ -171,8 +147,8 @@
         </div>
         <nav class="nav">
             <a href="../index.html" target="_self">Trang chủ</a>
-            <a href="activity.html" target="_self">Hoạt động lớp</a>
-            <a href="../member/member.html" target="_self">Thành viên nhóm</a>
+            <a href="activity_2.html" target="_self">Hoạt động lớp</a>
+            <a href="../member/member_2.html" target="_self">Thành viên nhóm</a>
         </nav>
     </div>
 
