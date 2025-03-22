@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,157 +8,205 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>Thành viên nhóm</title>
     <style>
-        .header-row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            background-color: hsl(231, 53%, 60%);
-            margin-bottom: 10px;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            height: 80px;
-            min-width: 0;
-        }
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .school-name {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 30px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-        .nav {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 100px;
-        }
-        nav a {
-            font-family: Times, 'Times New Roman', serif;
-            font-weight: 300;
-            color: #fff;
-            padding: 0 15px;
-            text-decoration: none;
-            text-align: center;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-size: large;
-            white-space: nowrap;
-        }
-        nav a:hover {
-            background-color: #223994;
-            text-decoration: underline;
-        }
-        .Bg {
-            background-image: url('./Home/background_2.JPG');
-            background-size: cover;
-            background-position: top;
-            text-align: center;
-            padding: 50px 50px;
-        }
-        .Bg h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 100px;
-            color: rgb(255, 255, 255);
-        }
-        body {
-            background: #f5f7fa;
-            margin: 0;
-            padding: 0;
-        }
-        .members-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .members-title {
-            font-family:'Dancing Script', cursive;
-            font-size: 48px;
-            color: #223994;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .members-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-template-rows: auto;
-            gap: 20px;
-            padding: 0 20px;
-            margin-bottom: 30px;
-        }
-        .member-card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .member-card:hover {
-            transform: scale(1.05);
-        }
-        .member-card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            object-fit: cover;
-            border: 3px solid #4a90e2;
-        }
-        .member-card h2 {
-            font-family:'Times New Roman', Times, serif;
-            color: #333;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-        .member-card p {
-            font-family: Arial, sans-serif;
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .member-card .role {
-            font-size: 16px;
-            color: #4a90e2;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div class="header-row">
-        <div class="container">
-            <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                <img src="../Home/logo.png" alt="Logo" class="logo">
-                <div class="school-name">Trường THPT Phú Nhuận</div>
-            </a>
-        </div>
-        <nav class="nav">
-            <a href="../index.html" target="_self">Trang chủ</a>
-            <a href="../Activities/activity_2.html" target="_self">Hoạt động lớp</a>
-            <a href="member_2.html" target="_self">Thành viên nhóm</a>
-        </nav>
-    </div>
+      .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: hsl(231, 53%, 60%);
+        margin-bottom: 10px;
+      }
 
-    <div class="members-container">
-        <h1 class="members-title">Thành viên nhóm 3</h1>
-        <div class="members-grid">
-            <div class="member-card">
-                <img src="Quynh_Nhien.jpg" alt="Quỳnh Nhiên">
-                <h2>Dương Ngọc Quỳnh Nhiên</h2>
-                <p>STT: 32</p>
-                <p><strong>Đặc điểm:</strong> Siêu Designer</p>
-                <p><strong>Sở thích:</strong> Đọc truyện tranh</p>
-                <div class="role">Trưởng nhóm</div>
-            </div>
-        </div>
+      .container {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        min-width: 0;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .school-name {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      .nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+      }
+
+      .nav a {
+        font-family: Times, 'Times New Roman', serif;
+        font-weight: 300;
+        color: #fff;
+        padding: 0 15px;
+        text-decoration: none;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        white-space: nowrap;
+      }
+
+      .nav a:hover {
+        background-color: #223994;
+        text-decoration: underline;
+      }
+
+      .Bg {
+        background-image: url('./Home/background_2.JPG');
+        background-size: cover;
+        background-position: top;
+        text-align: center;
+        padding: 50px 50px;
+      }
+
+      .Bg h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        color: rgb(255, 255, 255);
+      }
+
+      body {
+        background: #f5f7fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .members-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .members-title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 48px;
+        color: #223994;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .members-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+      }
+
+      .member-card {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* text-align: center; */
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+      }
+
+      .member-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+        border: 3px solid #4a90e2;
+      }
+
+      .member-card h2 {
+        font-family: 'Times New Roman', Times, serif;
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .member-card p {
+        font-family: Arial, sans-serif;
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .member-card .role {
+        font-size: 16px;
+        color: #4a90e2;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-row">
+      <div class="container">
+        <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+          <img src="../Home/logo.png" alt="Logo" class="logo">
+          <div class="school-name">Trường THPT Phú Nhuận</div>
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="../index.html" target="_self">Trang chủ</a>
+        <a href="../Activities/activity_2.html" target="_self">Hoạt động lớp</a>
+        <a href="member_2.html" target="_self">Thành viên nhóm</a>
+      </nav>
     </div>
-</body>
+    <div class="members-container">
+      <h1 class="members-title">Thành viên nhóm 3</h1>
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-card-left">
+            <center>
+              <img src="Quynh_Nhien.jpg" alt="Quỳnh Nhiên">
+            </center>
+            <p>
+              <strong>Họ và tên:</strong> Dương Ngọc Quỳnh Nhiên
+            </p>
+            <p>
+              <strong>Ngày sinh:</strong> 18/01/2007
+            </p>
+            <p>
+              <strong>Lớp:</strong> 12A3
+            </p>
+            <p>
+              <strong>Sở thích:</strong> shopping, ngủ, tô màu
+            </p>
+            <p>
+              <strong>Môn học yêu thích:</strong> Toán
+            </p>
+          </div>
+          <div class="member-card-right">
+            <p>
+              <strong>Màu yêu thích:</strong> Vàng
+            </p>
+            <p>
+              <strong>Ước mơ của mình là:</strong> có anh người yêu giỏi Hoá.
+            </p>
+            <p>
+              <strong>Flex nhẹ:</strong> tiền đầy túi..
+            </p>
+            <p>
+              <strong>Con vật yêu thích:</strong> Chim sẻ bạc má đuôi dài
+            </p>
+            <center>
+              <img src="https://cdn.noron.vn/2021/08/07/68697107351122068-1628341991_1024.jpg" alt="chim sẻ bạc má đuôi dài" width="150">
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
