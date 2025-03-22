@@ -70,21 +70,6 @@
             font-size: 100px;
             color: rgb(255, 255, 255);
         }
-        footer {
-            background: linear-gradient(135deg, #0f094b, #223994);
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 15px;
-            font-family:'Times New Roman', Times, serif;
-            font-size: 18px;
-            position: relative;
-            overflow: hidden;
-        }
-        footer p {
-            margin: 0;
-            position: relative;
-        }    
         body {
             background: #f5f7fa;
             margin: 0;
@@ -114,13 +99,20 @@
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            height: 500px;
+            text-decoration: none; /* Remove underline from link */
+            color: inherit; /* Inherit text color */
+            display: block; /* Make the <a> tag block-level */
         }
         .activity-card:hover {
             transform: translateY(-5px);
         }
-
+        .activity-card img {
+            width: 100%;
+            height: 300px;
+        }
         .activity-card h2 {
-            font-family:'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif;
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
@@ -156,30 +148,34 @@
         <h1 class="activity-title">Hoạt động lớp A3</h1>
         
         <div class="activity-grid">
-            <div class="activity-card">
-                <a href="./flashmob.html" target="self"><h2>Hội thi Dân vũ - Flashmob</h2></a>
+            <a href="./flashmob.html" class="activity-card">
+                <img src="../Home/flashmob.jpg" alt="Flashmob">
+                <h2>Hội thi Dân vũ - Flashmob</h2>
                 <p>Một ngày tràn đầy năng lượng và tinh thần đồng đội!</p>
                 <div class="date">Ngày: 15/03/2025</div>
-            </div>
+            </a>
             
-            <div class="activity-card">
-                <a href="./dalat.html" target="self"><h2>Đà Lạt</h2></a>
+            <a href="./dalat.html" class="activity-card">
+                <img src="../Home/dl1.jpg" alt="Đà Lạt">
+                <h2>Đà Lạt</h2>
                 <p>Hoạt động ngoại khóa vui nhộn và bổ ích.</p>
                 <div class="date">Ngày: 20/03/2025</div>
-            </div>
+            </a>
             
-            <div class="activity-card">
-                <a href="./teachers.html" target="self"><h2>Tập thể lớp cùng các thầy cô</h2></a>
+            <a href="./teachers.html" class="activity-card">
+                <img src="../Home/5.jpg" alt="Tập thể lớp cùng các thầy cô">
+                <h2>Tập thể lớp cùng các thầy cô</h2>
                 <p>Những kỷ niệm không thể nào quên cùng các thầy cô.</p>
                 <div class="date">Ngày: 25/03/2025</div>
-            </div>
-            <div class="activity-card">
-                <a href="./another activities.html" targer="self"><h2>Các hoạt động khác</h2></a>
+            </a>
+            
+            <a href="./another activities.html" class="activity-card">
+                <img src="../Home/3.jpg" alt="Các hoạt động khác">
+                <h2>Các hoạt động khác</h2>
                 <p>Các hoạt động ngoài giờ lên lớp thú vị và gắn kết.</p>
                 <div class="date">Ngày: 30/3/2025</div>
-            </div>
+            </a>
         </div>
     </div>
-    
 </body>
 </html>

@@ -1,150 +1,181 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ktra 15 phút</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-        <style>
-            .header-row {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                background-color: hsl(231, 53%, 60%);
-                margin-bottom: 10px;
-            }
-            .container {
-                display: flex;
-                align-items: center;
-                height: 80px;
-                min-width: 0;
-            }
-            .logo {
-                width: 80px;
-                height: 80px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            .school-name {
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 30px;
-                font-weight: bold;
-                white-space: nowrap;
-            }
-            .nav {
-                flex: 1;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                height: 100px;
-            }
-            nav a {
-                font-family: Times, 'Times New Roman', serif;
-                font-weight: 300;
-                color: #fff;
-                padding: 0 15px;
-                text-decoration: none;
-                text-align: center;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                font-size: large;
-                white-space: nowrap;
-            }
-            nav a:hover {
-                background-color: #223994;
-                text-decoration: underline;
-            }
-            .Bg {
-                background-image: url('./Home/background_2.JPG');
-                background-size: cover;
-                background-position: top;
-                text-align: center;
-                padding: 50px 50px;
-            }
-            .Bg h1 {
-                font-family: 'Dancing Script', cursive;
-                font-size: 100px;
-                color: rgb(255, 255, 255);
-            }
-            footer {
-                background: linear-gradient(135deg, #0f094b, #223994);
-                color: #fff;
-                text-align: center;
-                padding: 20px 0;
-                margin-top: 15px;
-                font-family:'Times New Roman', Times, serif;
-                font-size: 18px;
-                position: relative;
-                overflow: hidden;
-            }
-            footer p {
-                margin: 0;
-                position: relative;
-            }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 10px auto;
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            height:100%;
-            border-radius: 2%;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ktra 15 phút</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+      .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: hsl(231, 53%, 60%);
+        margin-bottom: 10px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        min-width: 0;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .school-name {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      .nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+      }
+
+      nav a {
+        font-family: Times, 'Times New Roman', serif;
+        font-weight: 300;
+        color: #fff;
+        padding: 0 15px;
+        text-decoration: none;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        white-space: nowrap;
+      }
+
+      nav a:hover {
+        background-color: #223994;
+        text-decoration: underline;
+      }
+
+      .Bg {
+        background-image: url('./Home/background_2.JPG');
+        background-size: cover;
+        background-position: top;
+        text-align: center;
+        padding: 50px 50px;
+      }
+
+      .Bg h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        color: rgb(255, 255, 255);
+      }
+
+      footer {
+        background: linear-gradient(135deg, #0f094b, #223994);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      footer p {
+        margin: 0;
+        position: relative;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+      }
     </style>
-</head>
-<body>
-<div class="header-row">
-    <div class="container">
-        <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-            <img src="../Home/logo.png" alt="Logo" class="logo">
-            <div class="school-name">Trường THPT Phú Nhuận</div>
-        </a>
+  </head>
+  <body>
+    <div class="header-row">
+        <div class="container">
+            <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="../Home/logo.png" alt="Logo" class="logo">
+                <div class="school-name">Trường THPT Phú Nhuận</div>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="../index.html" target="_self">Trang chủ</a>
+            <a href="activity_2.html" target="_self">Hoạt động lớp</a>
+            <a href="../member/member_2.html" target="_self">Thành viên nhóm</a>
+        </nav>
     </div>
-    <nav class="nav">
-        <a href="../index.html" target="_self">Trang chủ</a>
-        <a href="activity_2.html" target="_self">Hoạt động lớp</a>
-        <a href="../member/member_2.html" target="_self">Thành viên nhóm</a>
-    </nav>
-</div>
-<h1>ĐÀ LẠT</h1>
-<p>
-    Hoạt động ngoại khóa ở Đà Lạt dành cho tập thể lớp 12A3 là cơ hội tuyệt vời để các bạn học sinh gắn kết, thư giãn và khám phá vẻ đẹp của thành phố ngàn hoa.
-    Với khí hậu mát mẻ, cảnh sắc thơ mộng và không gian rộng lớn, Đà Lạt mang đến nhiều lựa chọn thú vị phù hợp cho một tập thể cùng với sự đồng hành của cô Trương Thị Hòa.
-    Không chỉ dừng lại ở vui chơi, các bạn còn có thể thưởng thức các món ăn đặc sản như bánh căn, nem nướng, kem bơ...
-    Những trải nghiệm này không chỉ mang lại tiếng cười mà còn giúp tập thể lớp hiểu nhau hơn, tạo nên kỷ niệm đẹp trong hành trình học tập và trưởng thành.
-</p>
-<div>
-    <div style="margin: auto; width: 70%;">
-        <img src="../Home/dl1.jpg" alt="Đà Lạt" >
-        <p> Tham quan Fresh Garden </p>
+
+    <h1 style="text-align: center; margin: 20px 0; color: #2c3e50;">ĐÀ LẠT - HÀNH TRÌNH KỶ NIỆM CỦA LỚP 12A3</h1>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <p style="text-align: justify; line-height: 1.6;">
+            Hoạt động ngoại khóa ở Đà Lạt dành cho tập thể lớp 12A3 là một cơ hội tuyệt vời để các bạn học sinh gắn kết, thư giãn và khám phá vẻ đẹp của thành phố ngàn hoa. Với khí hậu mát mẻ quanh năm, cảnh sắc thiên nhiên thơ mộng và không gian rộng lớn, Đà Lạt không chỉ là điểm đến lý tưởng cho những chuyến du lịch mà còn là nơi để tập thể lớp chúng tôi tạo nên những kỷ niệm đáng nhớ trong những năm tháng cuối cấp. Chuyến đi này còn đặc biệt hơn khi có sự đồng hành của cô Trương Thị Hòa – người giáo viên chủ nhiệm tận tâm, luôn quan tâm và dẫn dắt chúng tôi trong mọi hoạt động. Chuyến đi bắt đầu vào một buổi sáng sớm, khi cả lớp tập trung tại trường để lên xe. Không khí háo hức tràn ngập trong từng ánh mắt, tiếng cười nói rộn ràng vang lên khắp sân trường. Sau hơn 6 tiếng di chuyển từ TP. Hồ Chí Minh, chúng tôi đặt chân đến Đà Lạt với cảm giác phấn khởi xen lẫn tò mò. Thành phố chào đón chúng tôi bằng làn gió se lạnh, những con đường thông xanh mướt và hương thơm đặc trưng của hoa cỏ. Ngay từ khoảnh khắc đầu tiên, chúng tôi đã cảm nhận được sự khác biệt so với nhịp sống hối hả của thành phố lớn mà chúng tôi quen thuộc.
+        </p>
     </div>
-    <div style="margin: auto; width: 70%;">
-        <img src="../Home/dl2.jpg" alt="Đà Lạt" >
-        <p> Tham quan Thiền viện Trúc Lâm </p>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <p style="text-align: justify; line-height: 1.6;">
+            Điểm đến đầu tiên trong hành trình là Fresh Garden – một khu vườn hoa rực rỡ sắc màu. Nơi đây không chỉ thu hút bởi những luống hoa được chăm chút kỹ lưỡng mà còn bởi không gian yên bình, trong lành. Các bạn trong lớp tha hồ chụp ảnh, tạo dáng bên những bông hoa cẩm chướng, cúc họa mi và cả những tiểu cảnh xinh xắn được bố trí khắp khu vườn. Cô Trương Thị Hòa cũng không ngại hòa mình vào không khí vui vẻ, cùng chúng tôi lưu lại những bức ảnh kỷ niệm. Đây là lúc cả lớp cảm nhận được sự gần gũi và tình cảm giữa các thành viên – điều mà đôi khi những giờ học trên lớp không thể mang lại. Không gian tươi sáng của Fresh Garden như một liều thuốc tinh thần, giúp chúng tôi tạm quên đi áp lực học hành và hòa mình vào thiên nhiên.
+        </p>
+        <img src="../Home/dl1.jpg" alt="Đà Lạt" style="display: block; max-width: 100%; height: auto; margin: 10px auto;">
+        <p style="text-align: center; margin: 10px 0;">Tham quan Fresh Garden</p>
     </div>
-    <div style="margin: auto; width: 70%;">
-        <img src="../Home/dl3.jpg" alt="Đà Lạt" >
-        <p> Tham quan Dinh Bảo Đại </p>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <p style="text-align: justify; line-height: 1.6;">
+            Sau khi tham quan Fresh Garden, chúng tôi tiếp tục hành trình đến Thiền viện Trúc Lâm – một địa điểm mang đậm nét văn hóa và tâm linh của Đà Lạt. Bước vào không gian tĩnh lặng của thiền viện, chúng tôi như được gột rửa mọi mệt mỏi và căng thẳng của những ngày học tập. Hồ Tuyền Lâm phía dưới thiền viện hiện lên với mặt nước phẳng lặng, phản chiếu những hàng thông xanh mướt, tạo nên một khung cảnh đẹp như tranh vẽ. Một số bạn còn tranh thủ ngồi thiền hoặc lắng nghe cô Hòa kể về lịch sử và ý nghĩa của nơi này. Đây không chỉ là một chuyến đi chơi mà còn là dịp để chúng tôi học hỏi thêm về văn hóa và tìm thấy sự bình yên trong tâm hồn. Không khí thanh tịnh nơi đây giúp chúng tôi cảm nhận sâu sắc hơn về giá trị của sự tĩnh lặng giữa cuộc sống bộn bề.
+        </p>
+        <img src="../Home/dl2.jpg" alt="Đà Lạt" style="display: block; max-width: 100%; height: auto; margin: 10px auto;">
+        <p style="text-align: center; margin: 10px 0;">Tham quan Thiền viện Trúc Lâm</p>
     </div>
-</div>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <p style="text-align: justify; line-height: 1.6;">
+            Buổi chiều, cả lớp ghé thăm Dinh Bảo Đại – một công trình lịch sử gắn liền với vị vua cuối cùng của triều đại phong kiến Việt Nam. Bước vào dinh thự, chúng tôi không khỏi trầm trồ trước kiến trúc cổ kính pha lẫn nét hiện đại. Những căn phòng được bảo tồn nguyên vẹn, từ bàn ghế, giường ngủ cho đến những bức tranh treo tường, đều gợi lên một không gian sống hoàng gia đầy quyền uy. Cô Hòa dẫn chúng tôi đi từng khu vực, giải thích về cuộc đời của vua Bảo Đại và ý nghĩa lịch sử của nơi này. Đây là một trải nghiệm vừa thú vị vừa bổ ích, giúp chúng tôi hiểu thêm về quá khứ của đất nước. Không gian cổ kính của Dinh Bảo Đại như đưa chúng tôi trở về một thời kỳ lịch sử xa xôi, khơi dậy sự tò mò và niềm tự hào dân tộc.
+        </p>
+        <img src="../Home/dl3.jpg" alt="Đà Lạt" style="display: block; max-width: 100%; height: auto; margin: 10px auto;">
+        <p style="text-align: center; margin: 10px 0;">Tham quan Dinh Bảo Đại</p>
+    </div>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <p style="text-align: justify; line-height: 1.6;">
+            Không thể kể đến chuyến đi Đà Lạt mà bỏ qua những món ăn đặc sản làm say lòng người. Sau một ngày dài khám phá, cả lớp quây quần bên nhau thưởng thức bánh căn giòn tan, nem nướng thơm lừng và kem bơ béo ngậy. Những bữa ăn không chỉ ngon miệng mà còn là dịp để chúng tôi chia sẻ những câu chuyện vui buồn, những ước mơ và dự định cho tương lai. Tiếng cười vang lên không ngớt, kéo gần khoảng cách giữa các thành viên trong lớp. Khi màn đêm buông xuống, Đà Lạt trở nên lung linh hơn với ánh đèn từ chợ đêm và những con phố nhỏ. Chúng tôi cùng nhau dạo quanh hồ Xuân Hương, cảm nhận không khí mát lạnh và ngắm nhìn thành phố trong một vẻ đẹp khác. Chuyến đi khép lại với cảm giác lưu luyến, nhưng trong lòng mỗi người đều tràn đầy niềm vui và những kỷ niệm đẹp đẽ. Với lớp 12A3, Đà Lạt không chỉ là một điểm đến, mà còn là nơi lưu giữ thanh xuân, nơi chúng tôi đã cùng nhau cười, cùng nhau khám phá và cùng nhau trưởng thành.
+        </p>
+    </div>
 </body>
 </html>
