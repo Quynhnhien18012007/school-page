@@ -1,155 +1,159 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <title>Thành viên nhóm</title>
-    <style>
-      .header-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: hsl(231, 53%, 60%);
-        margin-bottom: 10px;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+        <title>Thành viên nhóm</title>
+        <style>
+            .header-row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: hsl(231, 53%, 60%);
+                margin-bottom: 10px;
+            }
 
-      .container {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        min-width: 0;
-      }
+            .container {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                min-width: 0;
+            }
 
-      .logo {
-        width: 80px;
-        height: 80px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
+            .logo {
+                width: 80px;
+                height: 80px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
 
-      .school-name {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 30px;
-        font-weight: bold;
-        white-space: nowrap;
-      }
+            .school-name {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 30px;
+                font-weight: bold;
+                white-space: nowrap;
+            }
 
-      .nav {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100px;
-      }
+            .nav {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100px;
+            }
 
-      .nav a {
-        font-family: Times, 'Times New Roman', serif;
-        font-weight: 300;
-        color: #fff;
-        padding: 0 15px;
-        text-decoration: none;
-        text-align: center;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        font-size: large;
-        white-space: nowrap;
-      }
+            .nav a {
+                font-family: Times, "Times New Roman", serif;
+                font-weight: 300;
+                color: #fff;
+                padding: 0 15px;
+                text-decoration: none;
+                text-align: center;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: large;
+                white-space: nowrap;
+            }
 
-      .nav a:hover {
-        background-color: #223994;
-        text-decoration: underline;
-      }
+            .nav a:hover {
+                background-color: #223994;
+                text-decoration: underline;
+            }
 
-      .Bg {
-        background-image: url('./Home/background_2.JPG');
-        background-size: cover;
-        background-position: top;
-        text-align: center;
-        padding: 50px 50px;
-      }
+            .Bg {
+                background-image: url("./Home/background_2.JPG");
+                background-size: cover;
+                background-position: top;
+                text-align: center;
+                padding: 50px 50px;
+            }
 
-      .Bg h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 100px;
-        color: rgb(255, 255, 255);
-      }
+            .Bg h1 {
+                font-family: "Dancing Script", cursive;
+                font-size: 100px;
+                color: rgb(255, 255, 255);
+            }
 
-      body {
-        background: #f5f7fa;
-        margin: 0;
-        padding: 0;
-      }
+            body {
+                background: #f5f7fa;
+                margin: 0;
+                padding: 0;
+            }
 
-      .members-container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+            .members-container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
 
-      .members-title {
-        font-family: 'Dancing Script', cursive;
-        font-size: 48px;
-        color: #223994;
-        text-align: center;
-        margin-bottom: 30px;
-      }
+            .members-title {
+                font-family: "Dancing Script", cursive;
+                font-size: 48px;
+                color: #223994;
+                text-align: center;
+                margin-bottom: 30px;
+            }
 
-      .members-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: auto;
-        gap: 20px;
-        padding: 0 20px;
-        margin-bottom: 30px;
-      }
+            .members-grid {
+                display: grid;
+                /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+                grid-template-rows: auto;
+                gap: 20px;
+                padding: 0 20px;
+                margin-bottom: 30px;
+            }
 
-      .member-card {
-        background: white;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        /* text-align: center; */
-        transition: transform 0.3s ease;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 20px;
-      }
+            .member-card {
+                background: white;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 20px;
+            }
 
-      .member-card img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 15px;
-        object-fit: cover;
-        border: 3px solid #4a90e2;
-      }
+            .member-card img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin-bottom: 15px;
+                object-fit: cover;
+                border: 3px solid #4a90e2;
+            }
 
-      .member-card h2 {
-        font-family: 'Times New Roman', Times, serif;
-        color: #333;
-        font-size: 20px;
-        margin-bottom: 5px;
-      }
+            .member-card h2 {
+                font-family: "Times New Roman", Times, serif;
+                color: #333;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
 
-      .member-card p {
-        font-family: Arial, sans-serif;
-        color: #666;
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
+            .member-card p {
+                font-family: Arial, sans-serif;
+                color: #666;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
 
-      .member-card .role {
-        font-size: 16px;
-        color: #4a90e2;
-        font-weight: bold;
-      }
-    </style>
-  </head>
+            .member-card .role {
+                font-size: 16px;
+                color: #4a90e2;
+                font-weight: bold;
+            }
+            button{
+                font-size: 20px;
+                padding: 10px;
+                margin-left: 90%;
+            }
+        </style>
+    </head>
   <body>
     <div class="header-row">
       <div class="container">
@@ -205,6 +209,11 @@
               <img src="https://cdn.noron.vn/2021/08/07/68697107351122068-1628341991_1024.jpg" alt="chim sẻ bạc má đuôi dài" width="150">
             </center>
           </div>
+        </div>
+        <div >
+            <button>
+                <a href="member_2.html" target="self">Quay lại</a>
+            </button>
         </div>
       </div>
     </div>
